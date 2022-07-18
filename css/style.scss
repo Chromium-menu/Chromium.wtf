@@ -52,10 +52,57 @@ footer {
     z-index: 998;
 }
 
+.pointer {
+    cursor: url("../images/pointer.webp"), pointer;
+  }
+
 .section-home {
     height: 100vh;
     width: 100%;
     background: $dark-color-light;
+}
+
+.menu-text {
+    @include flexCenter();
+    height: 100%;
+    width: 50%;
+    margin-top: 40vh;
+    text-align: right;
+}
+
+.menu-text-style{
+    width: 100%;
+    padding: 2rem;
+    font-size: x-large;
+}
+
+.menu-text-style h1 {
+    color: $peach;
+    text-decoration: underline;
+    text-decoration-color: $purple-blue;
+}
+
+.menu-text-style h3 {
+    color: $jinxdark;
+}
+
+.menu-picture {
+    height: 100%;
+    width: 50%;
+    margin-top: 20vh;
+}
+
+.menu-picture img {
+    padding-left: 10rem;
+}
+
+.menu-image {
+    filter: drop-shadow(0 0 2rem $black);
+}
+
+.showcase {
+    display: flex;
+    flex-direction: row;
 }
 
 .section-features {
@@ -84,7 +131,7 @@ footer {
 .bubble {
     position: fixed;
     z-index: 1;
-    background: $lightPurple;
+    background: $offwhite-alpha2;
     transform: scale(1.5);
     transition: all 0.15s ease;
     border-radius: 0.5rem;
@@ -94,7 +141,7 @@ footer {
   
     padding: 0.1rem;
 
-    opacity: 0.3;
+    opacity: 1;
   }
 
   nav {
@@ -125,4 +172,33 @@ footer {
   .big-logo {
     font-weight: 500;
     font-size: xx-large;
+  }
+
+  .gamer-rgb {
+	font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+	color: $textBlue;
+	background-image: -webkit-linear-gradient(90deg, $textBlue, $lightPurple);
+	-webkit-background-clip: text;
+    background-clip: text;
+	-webkit-text-fill-color: transparent;
+    animation: hue 15s infinite linear;
+}
+
+  @-webkit-keyframes hue {
+    from {
+      -webkit-filter: hue-rotate(0deg);
+    }
+    to {
+      -webkit-filter: hue-rotate(-360deg);
+    }
+  }
+  
+  @keyframes hue {
+    from {
+      -webkit-filter: hue-rotate(0deg);
+    }
+    to {
+      -webkit-filter: hue-rotate(-360deg);
+    }
   }
