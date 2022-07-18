@@ -66,7 +66,7 @@ footer {
     @include flexCenter();
     height: 100%;
     width: 50%;
-    margin-top: 40vh;
+    margin-top: 30vh;
     text-align: right;
 }
 
@@ -80,24 +80,25 @@ footer {
     color: $peach;
     text-decoration: underline;
     text-decoration-color: $purple-blue;
+    filter: drop-shadow(0.3rem 0.3rem 0.3rem $black);
 }
 
 .menu-text-style h3 {
     color: $jinxdark;
+    text-shadow: 0.3rem 0.3rem 0.3rem $black;
 }
 
 .menu-picture {
     height: 100%;
     width: 50%;
     margin-top: 20vh;
-}
-
-.menu-picture img {
-    padding-left: 10rem;
+    transform: translate(100px, 0);
 }
 
 .menu-image {
+    padding-left: 10rem;
     filter: drop-shadow(0 0 2rem $black);
+    position: absolute;
 }
 
 .showcase {
@@ -171,7 +172,11 @@ footer {
 
   .big-logo {
     font-weight: 500;
-    font-size: xx-large;
+    font-size: 3rem;
+
+    color: $lightPurple;
+
+    text-shadow: 0.2rem 0.2rem 0.5rem $black;
   }
 
   .gamer-rgb {
@@ -201,4 +206,19 @@ footer {
     to {
       -webkit-filter: hue-rotate(-360deg);
     }
+  }
+
+  [data-inviewport="scale-in"] { 
+    transition: 1s;
+    transform: scale(0.1);
+  }
+  [data-inviewport="scale-in"].is-inViewport { 
+    transform: scale(1);
+  }
+
+  [data-inviewport="move"] { 
+    transition: 1s;
+  }
+  [data-inviewport="move"].is-inViewport { 
+    transform: translate(0, 0);
   }
