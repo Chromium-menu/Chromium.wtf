@@ -1,0 +1,128 @@
+/* SCSS IMPORTS */
+@import "./colors";
+@import "./mixins";
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* ALL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+
+  html {
+    cursor: url("../images/cursor.webp"), default;
+    overscroll-behavior-y: none;
+    background: $dark-color-light;
+  }
+
+  ::selection {
+    color: $jinxlight;
+  }
+
+  /* NAVBAR BACKGROUND */
+header {
+    @include flexCenter();
+    height: 8vh;
+    width: 100%;
+    background: $dark-color-dark; 
+    box-shadow: $dark-color;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.4);
+    z-index: 998;
+    position: fixed;
+  }
+
+body {
+  color: white;
+  height: 100vh;
+  font-family: 'Rubik', sans-serif;
+  overscroll-behavior-y: none;
+  font-weight: 300;
+}
+
+footer {
+    @include flexCenter();
+    height: 5vh;
+    width: 100%;
+    background: $dark-color-dark; 
+    box-shadow: $dark-color;
+    box-shadow: 0px 3px -10px rgba(0, 0, 0, 0.4);
+    z-index: 998;
+}
+
+.section-home {
+    height: 100vh;
+    width: 100%;
+    background: $dark-color-light;
+}
+
+.section-features {
+    height: 100vh;
+    width: 100%;
+    background: $googleGray;
+}
+
+.section-reviews {
+    height: 100vh;
+    width: 100%;
+    background: $dark-color-light;
+}
+
+.section-buy {
+    height: 95vh;
+    width: 100%;
+    background: $googleGray;
+}
+  
+.navbarUL a {
+    font-weight: 500;
+  }
+
+/* FLOATING BUBBLE UNDER NAVBAR TEXT */
+.bubble {
+    position: fixed;
+    z-index: 1;
+    background: $lightPurple;
+    transform: scale(1.5);
+    transition: all 0.15s ease;
+    border-radius: 0.5rem;
+    border-color: $textBlue;
+    border-width: 0.1vw;
+    border-style: solid;
+  
+    padding: 0.1rem;
+
+    opacity: 0.3;
+  }
+
+  nav {
+    min-height: 10vh;
+    margin: auto;
+    width: 97%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    position: fixed;
+    ul {
+      flex: 0.5;
+      font-size: 1.5rem;
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+    }
+    li{
+      padding-right: clamp(2rem, 0rem, 0rem);
+    }
+    a {
+      color: $textBlue;
+      text-decoration: none;
+    }
+  }
+
+  .big-logo {
+    font-weight: 500;
+    font-size: xx-large;
+  }
