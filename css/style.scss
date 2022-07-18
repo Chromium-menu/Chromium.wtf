@@ -92,7 +92,7 @@ footer {
     height: 100%;
     width: 50%;
     margin-top: 20vh;
-    transform: translate(100px, 0);
+    transform: translate(42vw, 0);
 }
 
 .menu-image {
@@ -222,3 +222,26 @@ footer {
   [data-inviewport="move"].is-inViewport { 
     transform: translate(0, 0);
   }
+
+  /* THIS MAKES CUSTOM SCROLLBAR */
+
+/* width */
+::-webkit-scrollbar {
+  width: 2px;
+  height: 0px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $lightPurple;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: $indigo;
+}
