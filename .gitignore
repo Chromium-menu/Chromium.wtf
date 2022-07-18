@@ -1,2 +1,8 @@
 #ignore workspace
 website.code-workspace
+
+#ignore css map
+*.css.map
+
+#ignore scss
+*.scss
