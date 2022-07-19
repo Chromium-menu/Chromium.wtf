@@ -140,10 +140,10 @@ footer {
 }
 
 .menu-image {
-  padding-left: 10rem;
   -webkit-filter: drop-shadow(0 0 2rem black);
           filter: drop-shadow(0 0 2rem black);
   position: absolute;
+  margin-left: 10rem;
 }
 
 .showcase {
