@@ -127,7 +127,7 @@ footer {
 }
 
 .menu-text-style h3 {
-  color: #409add;
+  color: #cfcece;
   text-shadow: 0.3rem 0.3rem 0.3rem black;
 }
 
@@ -176,22 +176,20 @@ footer {
 
 .navbarUL a {
   font-weight: 500;
+  color: #FFCAC9;
 }
 
 /* FLOATING BUBBLE UNDER NAVBAR TEXT */
 .bubble {
   position: fixed;
   z-index: 1;
-  background: rgba(189, 189, 189, 0.1);
-  -webkit-transform: scale(1.5);
-          transform: scale(1.5);
+  -webkit-transform: scale(1);
+          transform: scale(1);
   -webkit-transition: all 0.15s ease;
   transition: all 0.15s ease;
-  border-radius: 0.5rem;
-  border-color: #4c61f5;
-  border-width: 0.1vw;
-  border-style: solid;
-  padding: 0.1rem;
+  border-color: #737DFE;
+  border-bottom-style: solid;
+  border-bottom-width: 0.2rem;
   opacity: 1;
 }
 
@@ -308,11 +306,11 @@ nav a {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #7c7aff;
+  background: #FFCAC9;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #6610f2;
+  background: #cfcece;
 }
 /*# sourceMappingURL=style.css.map */
