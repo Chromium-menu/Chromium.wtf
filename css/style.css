@@ -139,6 +139,11 @@ footer {
           transform: translate(42vw, 0);
 }
 
+.movein {
+  -webkit-transform: translate(-42vw, 0);
+          transform: translate(-42vw, 0);
+}
+
 .menu-image {
   -webkit-filter: drop-shadow(0 0 2rem black);
           filter: drop-shadow(0 0 2rem black);
@@ -193,6 +198,8 @@ footer {
   border-color: #737DFE;
   border-radius: 10px;
   background-color: rgba(203, 215, 255, 0.03);
+  -webkit-transform: translate(25vw, 0);
+          transform: translate(25vw, 0);
 }
 
 .section-reviews {
