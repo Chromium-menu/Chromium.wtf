@@ -202,6 +202,11 @@ footer {
           transform: translate(25vw, 0);
 }
 
+.item h1 {
+  padding-bottom: 0.7rem;
+  padding-top: 0.7rem;
+}
+
 .section-reviews {
   height: 100vh;
   width: 100%;
